@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travely</title>
+
+    <link rel="stylesheet" href="asets/css/stylesheet.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- PRE LOADER -->
+<div id="preloader">
+
+    <div class="loader-content">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+</div>
+
+<div id="website">
+    <!--  HEADER  -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo" style="gap: 5px;">
+                Travely
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="#">Tours</a>
+                </li>
+
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="active">More Pages <i class="fa-solid fa-chevron-down"></i></a>
+                
+                    <ul class="dropdown-menu">
+
+                     <li><a href="#">Destination Details</a></li>
+
+                     <li><a href="#">Tour Details</a></li>
+
+                     <li><a href="#">Booking</a></li>
+
+                     <li><a href="#">Testimonials</a></li>
+
+                     <li><a href="#">Frequently Asked Questions</a></li>
+
+                     <li><a href="#">Blog Details</a></li>
+
+                     <li><a href="#">Terms</a></li>
+
+                     <li><a href="#">Privacy</a></li>
+
+                     <li><a href="#">404</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Dropdown</a>                
+                     <ul class="dropdown-menu">
+    
+           
+                    </ul>
+
+                
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="login.html"><button class="get-started">
+                Get Started
+            </button></a>
+
+            <!-- Mobile Menu -->
+            <div class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!--HERO-->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <!-- Small Badge -->
+
+            <div class="hero-badge">
+                <i class="fa-regular fa-compass"></i>
+                YOUR ADVENTURE AWAITS
+            </div>
+
+
+            <!-- Heading -->
+
+            <h1>
+                Journey Beyond<br>
+                the Ordinary
+            </h1>
+
+
+            <!-- Description -->
+
+            <p>
+                Praesent commodo cursus magna, vel scelerisque nisl
+                consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum
+                faucibus dolor auctor.
+            </p>
+
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn primary-btn">
+                    <i class="fa-regular fa-circle-play"></i>
+                    Begin Your Trip
+                </a>
+
+                <a href="#" class="btn secondary-btn">
+                    Browse Packages
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SEARCH BOX ================= -->
+
+        <div class="search-box">
+
+            <!-- Destination -->
+
+            <div class="input-group">
+
+                <label>DESTINATION</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Where to?"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Arrival -->
+
+            <div class="input-group">
+
+                <label>ARRIVAL DATE</label>
+
+                <div class="input-field">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <input
+                        type="date"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Departure -->
+
+            <div class="input-group">
+
+                <label>DEPARTURE DATE</label>
+
+                <div class="input-field">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+
+                    <input
+                        type="date"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Adults -->
+
+            <div class="small-input">
+
+                <label>ADULTS</label>
+
+                <input
+                    type="number"
+                    value="2"
+                    min="1"
+                >
+
+            </div>
+
+
+            <!-- Children -->
+
+            <div class="small-input">
+
+                <label>CHILDREN</label>
+
+                <input
+                    type="number"
+                    value="0"
+                    min="0"
+                >
+
+            </div>
+
+
+            <!-- Search Button -->
+
+            <button class="find-btn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Find Tours
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= STATS ================= -->
+
+        <div class="stats">
+
+            <div class="stat">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>
+                    <strong>120+</strong> Destinations
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <i class="fa-solid fa-users"></i>
+
+                <span>
+                    <strong>45K+</strong> Travelers
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <i class="fa-solid fa-star"></i>
+
+                <span>
+                    <strong>4.9</strong> Rating
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <i class="fa-solid fa-award"></i>
+
+                <span>
+                    <strong>15+</strong> Awards
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- about section -->
+    <section class="about-section">
+
+    <div class="about-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-image">
+
+            <img src="asets/images/10001.webp" alt="Travel Adventure">
+
+            <div class="experience-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                    <strong>15+ Years</strong>
+                    <span>Industry Excellence</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-content">
+
+            <div class="section-title">
+                <span></span>
+                <p>ABOUT US</p>
+            </div>
+
+            <h2>
+                Crafting Memorable Adventures Around the Globe
+            </h2>
+
+            <p class="about-text">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                odit aut fugit, sed quia consequuntur magni dolores eos qui
+                ratione voluptatem sequi nesciunt.
+            </p>
+
+            <p class="about-text">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam nisi ut aliquid ex ea commodi
+                consequatur.
+            </p>
+
+
+            <!-- FEATURES -->
+
+            <div class="features">
+
+                <div class="feature">
+                    <i class="fa-regular fa-square-check"></i>
+                    <span>Seasoned travel specialists worldwide</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-regular fa-square-check"></i>
+                    <span>Tailored plans for every adventure</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-regular fa-square-check"></i>
+                    <span>Round-the-clock traveler assistance</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-regular fa-square-check"></i>
+                    <span>Best price guarantee on all packages</span>
+                </div>
+
+            </div>
+
+
+            <!-- REVIEW -->
+
+            <div class="review-card">
+
+                <div class="review-img">
+                    <img src="asets/images/10002.webp" alt="Traveler">
+                </div>
+
+                <div class="review-content">
+
+                    <div class="review-top">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <strong>4.8/5</strong>
+
+                    </div>
+
+                    <p>
+                        "Truly exceptional service!"
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- why choose us -->
+ <section class="why-choose">
+
+    <div class="why-container">
+
+        <!-- SECTION HEADING -->
+
+        <div class="why-heading">
+
+            <span>WHY CHOOSE US</span>
+
+            <h2>The Advantages We Bring</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod
+                <br>
+                tempor incididunt
+            </p>
+
+        </div>
+
+
+        <!-- CARDS -->
+
+        <div class="advantages-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="advantage-card">
+
+                <div class="advantage-icon">
+                    <i class="fa-regular fa-compass"></i>
+                </div>
+
+                <div class="advantage-content">
+
+                    <h3>Guided Exploration</h3>
+
+                    <p>
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="advantage-card">
+
+                <div class="advantage-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="advantage-content">
+
+                    <h3>Tailored Attention</h3>
+
+                    <p>
+                        Nam libero tempore cum soluta nobis est eligendi optio cumque nihil
+                        impedit quo minus
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="advantage-card">
+
+                <div class="advantage-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div class="advantage-content">
+
+                    <h3>Seamless Reservations</h3>
+
+                    <p>
+                        Itaque earum rerum hic tenetur a sapiente delectus ut aut
+                        reiciendis voluptatibus maiores
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="advantage-card">
+
+                <div class="advantage-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+
+                <div class="advantage-content">
+
+                    <h3>Global Destinations</h3>
+
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        aut fugit sed quia
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- why choose us end -->
+
+<!-- Featured Destinations -->
+ <section class="destinations-wrap">
+        
+        <div class="section-heading">
+        <h2><span></span> Featured Destinations <span></span></h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div> 
+
+    <div class="dest-grid">
+           
+        <!-- Card 1 -->
+        <a href="#" class="dest-card card-1" style="grid-column: span 4;">
+            <img src="asets/images/10003.webp" alt="Amalfi Coast, Italy">
+            <div class="badges">
+                <span class="badge dark">Trending</span>
+                <span class="badge green">Scenic</span>
+            </div>
+            <div class="card-content">
+                <p class="expeditions"><i class="fa-regular fa-compass"></i> 14 Expeditions</p>
+                <h3>Amalfi Coast, Italy</h3>
+                <p class="desc">Wander along dramatic coastal cliffs adorned with colorful villages and the sparkling Mediterranean below.</p>
+                <span class="discover">Discover More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+ 
+        <!-- Card 2 -->
+        <a href="#" class="dest-card card-2" style="grid-column: span 2;">
+            <img src="asets/images/10004.webp" alt="Patagonia, Argentina">
+            <div class="badges">
+                <span class="badge red">Top Rated</span>
+            </div>
+            <div class="card-content">
+                <p class="expeditions"><i class="fa-regular fa-compass"></i> 21 Expeditions</p>
+                <h3>Patagonia, Argentina</h3>
+                <p class="desc">Trek past glacial peaks and turquoise lakes through one of the last great untamed wildernesses on earth.</p>
+                <span class="discover">Discover More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+ 
+        <!-- Card 3 -->
+        <a href="#" class="dest-card card-3">
+            <img src="asets/images/10005.webp"Marrakech,Morocco>
+            <div class="badges">
+                <span class="badge dark">Heritage</span>
+            </div>
+            <div class="card-content">
+                <p class="expeditions"><i class="fa-regular fa-compass"></i> 9 Expeditions</p>
+                <h3>Marrakech, Morocco</h3>
+                <p class="desc">Get lost in vibrant souks and ancient medinas, where every alley tells a story centuries in the making.</p>
+                <span class="discover">Discover More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+ 
+        <!-- Card 4 -->
+        <a href="#" class="dest-card card-4">
+            <img src="asets/images/10006.webp" alt="Queenstown, New Zealand">
+            <div class="badges">
+                <span class="badge green">Exclusive</span>
+                <span class="badge dark">Adventure</span>
+            </div>
+            <div class="card-content">
+                <p class="expeditions"><i class="fa-regular fa-compass"></i> 8 Expeditions</p>
+                <h3>Queenstown, New Zealand</h3>
+                <p class="desc">The adventure capital of the world — bungee jump, jet boat, and hike through alpine scenery unmatched anywhere.</p>
+                <span class="discover">Discover More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+ 
+        <!-- Card 5 -->
+        <a href="#" class="dest-card card-5">
+            <img src="asets/images/10007.webp" alt="Phuket, Thailand">
+            <div class="badges">
+                <span class="badge dark">Tropical</span>
+                <span class="badge red">Featured</span>
+            </div>
+            <div class="card-content">
+                <p class="expeditions"><i class="fa-regular fa-compass"></i> 11 Expeditions</p>
+                <h3>Phuket, Thailand</h3>
+                <p class="desc">Crystal waters, limestone cliffs, and golden beaches make this island paradise endlessly photogenic.</p>
+                <span class="discover">Discover More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+ 
+        <!-- Card 6 -->
+        <a href="#" class="dest-card card-6">
+            <img src="asets/images/10008.webp" alt="Banff, Canada">
+            <div class="badges">
+                <span class="badge dark">Iconic</span>
+                <span class="badge green">Must Visit</span>
+            </div>
+            <div class="card-content">
+                <p class="expeditions"><i class="fa-regular fa-compass"></i> 17 Expeditions</p>
+                <h3>Banff, Canada</h3>
+                <p class="desc">Turquoise lakes framed by snow-capped peaks — the Canadian Rockies at their most breathtaking.</p>
+                <span class="discover">Discover More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </a>
+ 
+    </div>
+ 
+</section>
+<!-- Featured Destinations end -->
+
+<!-- banner -->
+ <section class="travel-banner">
+    <div class="travel-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+</svg>
+    </div>
+
+    <div class="travel-content">
+        <h2>Looking for Your Perfect Getaway?</h2>
+        <p>
+            Let our seasoned travel advisors craft a personalized itinerary
+            tailored to your dreams and budget.
+        </p>
+    </div>
+
+    <div class="travel-buttons">
+        <a href="#" class="btn browse-btn">Browse All Spots</a>
+        <a href="#" class="btn speak-btn">Speak with Us</a>
+    </div>
+</section>
+
+<!-- banner end -->
+
+<!-- Featured Tours -->
+        <div class="Tours">
+        <h2><span></span> Featured Tours <span></span></h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div> 
+
+<section class="tour-section">
+
+    <!-- Card 1 -->
+    <div class="tour-card" id="left">
+        <div class="tour-image">
+            <img src="asets/images/10009.webp" alt="Summit Peak Expedition">
+            <span class="tour-badge green">TOP RATED</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$3,290</h3>
+            <h2>Summit Peak Expedition</h2>
+
+            <div class="tour-info">
+                <span>◷ 7 Days</span>
+                <span>♙ Switzerland</span>
+            </div>
+
+            <p>
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua ut enim ad minim veniam quis nostrud exercitation.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.7</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="tour-card" id="right">
+        <div class="tour-image">
+            <img src="asets/images/100010.webp" alt="Tropical Shoreline Escape">
+            <span class="tour-badge red">HOT DEAL</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$1,850</h3>
+            <h2>Tropical Shoreline Escape</h2>
+
+            <div class="tour-info">
+                <span>◷ 6 Days</span>
+                <span>♙ Philippines</span>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                auctor magna vel risus tincidunt consequat viverra.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.9</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="tour-card" id="left">
+        <div class="tour-image">
+            <img src="asets/images/100011.webp" alt="Heritage Temple Discovery">
+            <span class="tour-badge purple">CULTURAL</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$2,640</h3>
+            <h2>Heritage Temple Discovery</h2>
+
+            <div class="tour-info">
+                <span>◷ 9 Days</span>
+                <span>♙ Cambodia</span>
+            </div>
+
+            <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae donec velit neque auctor.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.5</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="tour-card" id="right">
+        <div class="tour-image">
+            <img src="asets/images/100012.webp" alt="Savanna Wildlife Voyage">
+            <span class="tour-badge orange">LIMITED</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$4,120</h3>
+            <h2>Savanna Wildlife Voyage</h2>
+
+            <div class="tour-info">
+                <span>◷ 12 Days</span>
+                <span>♙ Kenya</span>
+            </div>
+
+            <p>
+                Nulla facilisi morbi tempus lacus nulla id volutpat lacus
+                laoreet non curabitur gravida arcu ac tortor dignissim.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.8</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 5 -->
+    <div class="tour-card" id="left">
+        <div class="tour-image">
+            <img src="asets/images/100013.webp" alt="Aurora Borealis Adventure">
+            <span class="tour-badge cyan">NEW TOUR</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$3,750</h3>
+            <h2>Aurora Borealis Adventure</h2>
+
+            <div class="tour-info">
+                <span>◷ 8 Days</span>
+                <span>♙ Norway</span>
+            </div>
+
+            <p>
+                Fusce ut placerat orci nulla pellentesque dignissim enim
+                sit amet venenatis urna cursus eget nunc scelerisque.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.6</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 6 -->
+    <div class="tour-card" id="right">
+        <div class="tour-image">
+            <img src="asets/images/100014.webp" alt="Saharan Dune Expedition">
+            <span class="tour-badge dark-orange">ADVENTURE</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$2,180</h3>
+            <h2>Saharan Dune Expedition</h2>
+
+            <div class="tour-info">
+                <span>◷ 6 Days</span>
+                <span>♙ Morocco</span>
+            </div>
+
+            <p>
+                Mauris blandit aliquet elit eget tincidunt nibh pulvinar a.
+                Proin gravida hendrerit lectus a molestie nunc sed.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.4</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 7 -->
+    <div class="tour-card" id="left">
+        <div class="tour-image">
+            <img src="asets/images/100015.webp" alt="Continental Metropolis Tour">
+            <span class="tour-badge yellow">POPULAR</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$1,560</h3>
+            <h2>Continental Metropolis Tour</h2>
+
+            <div class="tour-info">
+                <span>◷ 10 Days</span>
+                <span>♙ Europe</span>
+            </div>
+
+            <p>
+                Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas vestibulum.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.7</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 8 -->
+    <div class="tour-card" id="right">
+        <div class="tour-image">
+            <img src="asets/images/100016.webp" alt="Oceanic Paradise Getaway">
+            <span class="tour-badge pink">LUXURY</span>
+        </div>
+
+        <div class="tour-content">
+            <h3 class="price">$5,890</h3>
+            <h2>Oceanic Paradise Getaway</h2>
+
+            <div class="tour-info">
+                <span>◷ 11 Days</span>
+                <span>♙ Maldives</span>
+            </div>
+
+            <p>
+                Curabitur arcu erat accumsan id imperdiet et porttitor at
+                sem donec rutrum congue leo eget malesuada.
+            </p>
+
+            <div class="tour-bottom">
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <b>4.9</b>
+                </div>
+
+                <a href="#">View Details <b>→</b></a>
+            </div>
+        </div>
+    </div>
+     
+</section>
+   <!-- btn  -->
+    <div class="packages-btn-wrapper">
+    <a href="#" class="packages-btn">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-safari" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0m0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0M4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341m6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8m12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8M2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091m6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354m9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353M1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483m-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177m12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177M3.045 12.944a.3.3 0 0 1-.029-.376l3.898-5.592a.3.3 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.3.3 0 0 1-.062.062l-5.592 3.898a.3.3 0 0 1-.382-.034zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176M9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176"/>
+</svg></span>
+        BROWSE ALL PACKAGES
+    </a>
+</div>
+    <!-- btn end -->
+<!-- Featured Tours end  -->
+
+
+<!-- slider -->
+
+    <section class="testimonials">
+
+        <div class="testimonial-heading">
+
+            <h2>
+                <span></span>
+
+                Testimonials Home
+
+                <span></span>
+            </h2>
+
+            <p>
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+
+        </div>
+
+
+        <div class="testimonial-slider">
+
+            <button
+                type="button"
+                class="slider-arrow prev-btn"
+                id="prevBtn">
+
+                &#10094;
+
+            </button>
+
+            <div class="cards-window">
+
+                <div
+                    class="cards-track"
+                    id="cardsTrack">
+
+
+                    <!-- ================= CARD 1 ================= -->
+
+                    <div class="testimonial-card">
+                      <div class="same"></div>
+                        <div class="person-image">
+
+                            <img
+                                src="asets/images/100019.webp"
+                                alt="Marcus Whitfield">
+
+                        </div>
+
+
+                        <p class="review">
+
+                            Consequuntur sunt aut quasi enim aliquam quae harum
+                            pariatur laboris nisi ut aliquip labore amet velit debitis.
+
+                        </p>
+
+
+                        <div class="quote">
+
+                            ❞
+
+                        </div>
+
+
+                        <div class="stars">
+
+                            ★★★★★
+
+                        </div>
+
+
+                        <h3 style="margin-left: 92px;">
+
+                            Marcus Whitfield
+
+                        </h3>
+
+
+                        <span class="designation">
+
+                            MANAGING DIRECTOR
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- ================= CARD 2 ================= -->
+
+                    <div class="testimonial-card">
+                      <div class="same"></div>
+                     
+                        <div class="person-image">
+
+                            <img
+                                src="asets/images/100020.webp"
+                                alt="Elena Vasquez">
+
+                        </div>
+
+
+                        <p class="review">
+
+                            Voluptas sit amet consectetur adipisci velit sed quia
+                            non numquam eius modi tempora incidunt ut labore magnam.
+
+                        </p>
+
+
+                        <div class="quote">
+
+                            ❞
+
+                        </div>
+
+
+                        <div class="stars">
+
+                            ★★★★★
+
+                        </div>
+
+
+                        <h3>
+
+                            Elena Vasquez
+
+                        </h3>
+
+
+                        <span class="designation">
+
+                            LEAD DESIGNER
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- ================= CARD 3 ================= -->
+                     
+                    <div class="testimonial-card">
+                      <div class="same"></div>
+                        
+                    <div class="person-image">
+
+                            <img
+                                src="asets/images/100017.webp"
+                                alt="David Thornton">
+
+                        </div>
+
+                        <p class="review">
+
+                            Nemo enim ipsam voluptatem quia aspernatur aut odit
+                            fugit sed quia consequuntur magni dolores eos ratione.
+
+                        </p>
+
+
+                        <div class="quote">
+
+                            ❞
+
+                        </div>
+
+
+                        <div class="stars">
+
+                            ★★★★★
+
+                        </div>
+
+
+                        <h3>
+
+                            David Thornton
+
+                        </h3>
+
+
+                        <span class="designation">
+
+                            RETAIL MANAGER
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- ================= CARD 4 ================= -->
+
+                    <div class="testimonial-card">
+                      <div class="same"></div>
+                         
+                        <div class="person-image">
+
+                            <img
+                                src="asets/images/100018.webp"
+                                alt="Natalie Prescott">
+
+                        </div>
+
+
+                        <p class="review">
+
+                            Quis autem vel eum iure reprehenderit qui in ea
+                            voluptate velit esse quam nihil molestiae illum fugiat quo.
+
+                        </p>
+
+
+                        <div class="quote">
+
+                            ❞
+
+                        </div>
+
+
+                        <div class="stars">
+
+                            ★★★★★
+
+                        </div>
+
+
+                        <h3 style="margin-left: 92px;">
+
+                            Natalie Prescott
+
+                        </h3>
+
+
+                        <span class="designation">
+
+                            STARTUP FOUNDER
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+           <button
+                type="button"
+                class="slider-arrow next-btn"
+                id="nextBtn">
+
+                &#10095;
+
+            </button>
+
+
+        </div>
+
+
+
+        <div class="slider-dots">
+
+            <button
+                type="button"
+                class="dot active"
+                data-index="0">
+            </button>
+
+            <button
+                type="button"
+                class="dot"
+                data-index="1">
+            </button>
+
+            <button
+                type="button"
+                class="dot"
+                data-index="2">
+            </button>
+
+            <button
+                type="button"
+                class="dot"
+                data-index="3">
+            </button>
+
+        </div>
+
+
+    </section>
+ <!-- slider end -->
+
+ <!-- Journey section -->
+  <section class="journey-section">
+
+    <div class="journey-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="journey-content">
+
+            <span class="journey-label">
+                EMBARK ON A JOURNEY
+            </span>
+
+            <h1>
+                Unleash Your Wanderlust
+                <br>
+                Today
+            </h1>
+
+            <p>
+                Immerse yourself in extraordinary landscapes, vibrant cultures,
+                and curated experiences designed to transform the way you see
+                the world. Every expedition is crafted with passion and precision.
+            </p>
+
+            <div class="journey-buttons">
+
+                <a href="#" class="journey-btn primary-btn">
+                    Discover Journeys
+                </a>
+
+                <a href="#" class="journey-btn secondary-btn">
+                    Build Your Itinerary
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT IMAGE -->
+        <div class="journey-image">
+
+            <img
+                src="asets/images/100021.webp"
+                alt="Luxury travel destination"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- Journey section end -->
+
+  <!-- journey section cards -->
+    <section class="journey-cards-section">
+
+    <div class="journey-cards-grid">
+
+        <!-- CARD 1 -->
+        <div class="journey-card" id="card1">
+
+            <div class="journey-card-icon">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+
+            <div class="journey-card-content">
+
+                <h3>75+ Destinations</h3>
+
+                <p>
+                    Venture into remarkable locations spanning every corner of the globe
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="journey-card" id="card2">
+
+            <div class="journey-card-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div class="journey-card-content">
+
+                <h3>Verified & Protected</h3>
+
+                <p>
+                    Journey confidently with our comprehensive protection program
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="journey-card" id="card3">
+
+            <div class="journey-card-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <div class="journey-card-content">
+
+                <h3>Always Available</h3>
+
+                <p>
+                    Expert guidance and assistance accessible around the clock
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="journey-card" id="card4">
+
+            <div class="journey-card-icon">
+                <i class="fa-solid fa-tag"></i>
+            </div>
+
+            <div class="journey-card-content">
+
+                <h3>Unbeatable Value</h3>
+
+                <p>
+                    Premium experiences at exceptional rates with member-only perks
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- journey section cards end-->
+
+<!-- stats section -->
+ <section class="stats-section">
+
+    <div class="stats-container">
+
+        <!-- STAT 1 -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <h2 id="stats1">0</h2>
+
+            <p>SATISFIED EXPLORERS</p>
+
+        </div>
+
+
+        <!-- STAT 2 -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <h2 id="stats2">0</h2>
+
+            <p>NATIONS EXPLORED</p>
+
+        </div>
+
+
+        <!-- STAT 3 -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <h2 id="stats3">0</h2>
+
+            <p>APPROVAL RATING</p>
+
+        </div>
+
+
+        <!-- STAT 4 -->
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                <i class="fa-regular fa-calendar-check"></i>
+            </div>
+
+            <h2 id="stats4">0</h2>
+
+            <p>YEARS OF EXPERTISE</p>
+
+        </div>
+
+    </div>
+
+</section>
+ <!-- stats section end -->
+
+ <!-- footer -->
+  <footer class="travel-footer">
+
+    <div class="footer-main">
+
+        <!-- Address -->
+        <div class="footer-box">
+
+            <div class="footer-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="footer-content">
+                <h3>Address</h3>
+
+                <p>
+                    A108 Adam Street<br>
+                    New York, NY 535022
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-box">
+
+            <div class="footer-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="footer-content">
+                <h3>Contact</h3>
+
+                <p>
+                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                    <strong>Email:</strong> info@example.com
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Opening Hours -->
+        <div class="footer-box">
+
+            <div class="footer-icon">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div class="footer-content">
+                <h3>Opening Hours</h3>
+
+                <p>
+                    <strong>Mon-Sat:</strong> 11AM - 23PM<br>
+                    <strong>Sunday:</strong> Closed
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Follow Us -->
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © Copyright <strong>Travely</strong> All Rights Reserved
+        </p>
+
+        <p>
+            Designed by
+            <a href="https://bootstrapmade.com/content/demo/Travely/" style="text-decoration: none;"><span>BootstrapMade</span></a>
+        </p>
+
+    </div>
+
+</footer>
+ <!-- footer end-->
+</div>
+
+<script src="asets/js/travel.js">
+    // navbar items
+let menuBtn = document.getElementById("menuBtn");
+let navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener('click',()=>{
+    navLinks.classList.toggle("show");
+});
+
+// more page dropdown1
+let dropdown = document.querySelector(".dropdown");
+let dropdownLink = document.querySelector(".dropdown-link");
+
+dropdownLink.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    dropdown.classList.toggle("active");
+});
+
+
+ 
+
+</script>
+
+</body>
+</html>

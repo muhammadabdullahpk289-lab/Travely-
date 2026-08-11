@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <style>
+    body{
+   background-color: #0EA372;
+   margin: 0;
+   padding: 20px;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#loginbox{
+    background-color: rgba(211, 208, 208, 0.4); 
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    color: black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    animation: slideToCenter 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    margin: 20px;
+}
+@keyframes slideToCenter {
+  0% {
+    transform: translatey(-100vw); 
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0); 
+    opacity: 1;
+  }
+}
+
+#loginbox h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size: 24px;
+}
+
+#loginbox input{
+    width:100%;
+    padding:8px 10px;
+    margin:10px 0;
+    border:1px solid #08b87d;
+    border-radius:5px;
+    background-color: #085f42;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#submitbtn{
+    width:100%;
+    padding:10px;
+    background:#555;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+#submitbtn:hover{
+    background: #0EA372;
+    transition: 0.3s;
+}
+
+.hidden{
+    display:none;
+}
+.password-box{
+    position: relative;
+    width: 100%;
+}
+
+.password-box input{
+    width: 100%;
+    padding: 8px 40px 8px 10px;
+    box-sizing: border-box;
+}
+
+.password-box i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-box i:hover{
+    color: #000;
+}
+
+/* Responsive fixes */
+@media screen and (max-width: 768px) {
+    #loginbox {
+        max-width: 350px;
+        padding: 25px;
+        margin: 15px;
+    }
+    
+    #loginbox h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    #loginbox {
+        max-width: 100%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    #loginbox h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    #loginbox input {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+    
+    #submitbtn {
+        font-size: 18px;
+        padding: 12px;
+    }
+    
+    .password-box input {
+        padding: 10px 40px 10px 12px;
+    }
+    
+    .password-box i {
+        right: 12px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #loginbox {
+        padding: 15px;
+        margin: 5px;
+    }
+    
+    #loginbox h2 {
+        font-size: 18px;
+    }
+    
+    #loginbox input {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    #submitbtn {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .password-box input {
+        padding: 8px 35px 8px 10px;
+    }
+    
+    .password-box i {
+        right: 10px;
+        font-size: 16px;
+    }
+}
+
+   </style>
+</head>
+
+<body>
+
+    <div id="loginbox" id="hidden">
+        <h2>Login Form</h2>
+
+        <input type="text" id="username" placeholder="Enter Username">
+
+        <div class="password-box">
+            <input type="password" id="password" placeholder="Enter Password">
+            <i class="fa-solid fa-eye" id="eye"></i>
+        </div>
+        <button id="submitbtn">Login</button>
+
+        <p id="message"></p>
+    </div>
+    <script>
+let loginbox = document.getElementById("loginbox");
+let submitbtn = document.getElementById("submitbtn");
+let message = document.getElementById("message");
+let password = document.getElementById("password");
+let eye = document.getElementById("eye");
+
+eye.addEventListener("click", function () {
+    if(password.type === "password"){
+        password.type = "type";
+        eye.classList.remove("fa-eye-slash");
+        eye.classList.add("fa-eye");
+    } else{
+        password.type = "password";
+        eye.classList.remove("fa-eye");
+        eye.classList.add("fa-eye-slash");
+    }
+});
+submitbtn.addEventListener("click", function () {
+
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+if (username === "admin" && password === "15") {
+    message.style.color = "green";
+    message.innerText = "LOGEDIN SUCCESSFULLY";
+    alert("loged in to this page successfully");
+    localStorage.setItem('username','admin');
+    localStorage.setItem('password','15');
+} else {
+    message.style.color = "blue";
+    message.innerText = "Incorrect username and password";
+    alert("please enter correct username and password");
+    }   
+});
+
+
+
+    </script>
+</body>
+
+</html>
