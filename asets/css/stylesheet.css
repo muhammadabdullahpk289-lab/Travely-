@@ -191,7 +191,9 @@ body {
     transition: 0.2s ease;
 }
 
-
+.menu-btn{
+    color: white;
+}
 /* Hover */
 
 .dropdown-menu li a:hover {
