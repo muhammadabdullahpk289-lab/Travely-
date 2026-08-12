@@ -327,3 +327,21 @@ window.addEventListener("load", function () {
 });
 
 
+    // navbar items
+let menuBtn = document.getElementById("menuBtn");
+let navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener('click',()=>{
+    navLinks.classList.toggle("show");
+});
+
+// more page dropdown1
+let dropdown = document.querySelector(".dropdown");
+let dropdownLink = document.querySelector(".dropdown-link");
+
+dropdownLink.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    dropdown.classList.toggle("active");
+});
